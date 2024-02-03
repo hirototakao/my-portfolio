@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiroto Takao - Contact</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+          crossorigin="anonymous"></script>
+  <script src="./contact.js"></script>
+  <style>
+     body {
+      margin: 0 200px 0 200px;
+     }
+     .input-group {
+      padding:0 200px 0 200px;
+     }
+     .text-align {
+      padding-left:200px;
+     }
+     .display-1 {
+      margin-top:100px;
+      margin-bottom:20px;
+     }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../about/my-portfolio.html">HirotoTakao</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="mr-auto"></ul>
+      <ul class="navbar-nav pull-right">
+        <li class="nav-item active">
+          <a class="nav-link" href="../about/my-portfolio.html">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <h1 class="display-1 text-center">Contact me</h1>
+    <p class="text-align" style="font-weight:300; line-height: 0.2;">email</p>
+    <div class="input-group mb-3">
+      <span type="text" class="form-control" id="email">billy0123210@outlook.com</span>
+      <button class="btn btn-primary" onclick="clipboard('email')">copy</button>
+    </div>
+    <p class="text-align" style="font-weight:300; line-height: 0.2;">twitter</p>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="twitter-account" value="https://twitter.com/takao1897515?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Atakao1897515%7Ctwcon%5Es2">
+      <button class="btn btn-primary" onclick="clipboardForTextBox('twitter-account')">copy</button>
+    </div>
+</body>
+</html>
