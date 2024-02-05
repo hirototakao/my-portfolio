@@ -50,7 +50,7 @@ th, td {
   top:10px;
   left:120px;
   width:84%;
-  height:97%;
+  height:95%;
   transition:none;
   border:3px solid  #999999;
   border-radius:3px;
@@ -67,4 +67,7 @@ th, td {
   padding:12px 12px 12px 12px;
   height:8.4%;
   width:100%;
+}
+.theme-changer {
+  background-color:rgba(0, 0, 0, .5);
 }
