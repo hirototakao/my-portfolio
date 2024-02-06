@@ -5,9 +5,9 @@ function clipboard(id) {
     navigator.clipboard.writeText(email);
   });
 }
-function clipboardForTextBox() {
+function clipboardForTextBox(id) {
   $(function() {
-    const Input = document.getElementById('twitter-account');
+    const Input = document.getElementById(id);
     const InputValue = Input.getAttribute('value');
     navigator.clipboard.writeText(InputValue);
   });

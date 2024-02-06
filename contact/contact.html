@@ -9,9 +9,20 @@
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
           crossorigin="anonymous"></script>
   <script src="./contact.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const twitterIcon = document.getElementById('twitterIcon');
+    const githubIcon = document.getElementById('githubIcon');
+    twitterIcon.setAttribute('height', '25');
+    twitterIcon.setAttribute('width', '30');
+
+    githubIcon.setAttribute('height', '27');
+    githubIcon.setAttribute('width', '30');
+      });
+  </script>
   <style>
      body {
-      margin: 0 200px 0 200px;
+      padding: 0 200px 0 200px;
      }
      .input-group {
       padding:0 200px 0 200px;
@@ -49,10 +60,17 @@
       <span type="text" class="form-control" id="email">billy0123210@outlook.com</span>
       <button class="btn btn-primary" onclick="clipboard('email')">copy</button>
     </div>
-    <p class="text-align" style="font-weight:300; line-height: 0.2;">twitter</p>
+    <p class="text-align" style="font-weight:300; line-height: 0.2;">X(twitter)</p>
     <div class="input-group mb-3">
+      <span class="input-group-text"><img src="../twitter.png" id="twitterIcon"></span>
       <input type="text" class="form-control" id="twitter-account" value="https://twitter.com/takao1897515?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Atakao1897515%7Ctwcon%5Es2">
       <button class="btn btn-primary" onclick="clipboardForTextBox('twitter-account')">copy</button>
+    </div>
+    <p class="text-align" style="font-weight:300; line-height: 0.2;">GitHub</p>
+    <div class="input-group mb-3">
+      <span class="input-group-text"><img src="../github.png" id="githubIcon"></span>
+      <input type="text" class="form-control" id="github-account" value="https://github.com/hirototakao" style="height:40px;">
+      <button class="btn btn-primary" onclick="clipboardForTextBox('github-account')" height="30">copy</button>
     </div>
 </body>
 </html>
