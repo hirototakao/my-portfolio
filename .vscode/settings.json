@@ -1,0 +1,8 @@
+{
+  "cSpell.language": "en",
+  "cSpell.enableFiletypes": [
+    "!julia",
+    "!markdown",
+    "objective-cpp"
+  ]
+}
