@@ -1,11 +1,9 @@
 function clipboard(id) {
-    const emailSpan = document.getElementById(id);
-    const email = emailSpan.innerText;
+  　const email = document.getElementById(id).innerText;
     navigator.clipboard.writeText(email);
 }
 function clipboardForTextBox(id) {
-    const Input = document.getElementById(id);
-    const InputValue = Input.getAttribute('value');
+    const InputValue = document.getElementById(id).value;
     navigator.clipboard.writeText(InputValue);
 }
 
@@ -14,7 +12,21 @@ document.addEventListener('DOMContentLoaded', function() {
   const githubIcon = document.getElementById('githubIcon');
   twitterIcon.setAttribute('height', '25');
   twitterIcon.setAttribute('width', '30');
-
+  
   githubIcon.setAttribute('height', '27');
   githubIcon.setAttribute('width', '30');
 });
+
+function openPopUp() {
+  document.getElementById("pop-up").style.display = "block";
+  document.getElementById("exit-button").style.display = "block";
+  document.getElementById('navbar').removeAttribute("style");
+
+}
+
+function closePopUp() {
+  document.getElementById("pop-up").style.display = "none";
+  document.getElementById("exit-button").style.display = "none";
+  document.getElementById('navbar').setAttribute("style", "background-color:rgb(248, 249, 250)!important;");
+
+}
