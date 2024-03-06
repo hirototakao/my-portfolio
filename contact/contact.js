@@ -1,10 +1,12 @@
 function clipboard(id) {
   　const email = document.getElementById(id).innerText;
     navigator.clipboard.writeText(email);
+    swal("Copied!", "You copied it to clipboard", "success")
 }
 function clipboardForTextBox(id) {
     const InputValue = document.getElementById(id).value;
     navigator.clipboard.writeText(InputValue);
+    swal("Copied!", "You copied it to clipboard", "success")
 }
 
 document.addEventListener('DOMContentLoaded', function() {

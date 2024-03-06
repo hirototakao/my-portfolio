@@ -6,7 +6,7 @@ let sound;
 let bubbles =[]; 
 
 function setup(){
- createCanvas(1010, 504);
+ createCanvas(945, 528);
 	  for (let i = 0; i < 1; i++){
          bubbles[i] = new Bubble(random(width),random(400,800));
       }
