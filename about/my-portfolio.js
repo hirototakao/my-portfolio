@@ -1,5 +1,6 @@
 'use strict';
 const classNames = ["card1", "card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9", "card10", "card11", "card12", "card13", "card14", "card15","body"];
+const audio = new Audio("../underwater-whale-and-diving-sound-ambient-116185.mp3");
 
 function openPopUp() {
   document.getElementById('navbar').removeAttribute("style");
@@ -16,7 +17,7 @@ function openPopUp() {
   loading.animate(
     {
       opacity: [
-        "1", "0.2"
+        "1", "0.2", "0.5", "0.6"
       ],
     },
     {
@@ -29,14 +30,29 @@ function openPopUp() {
     loading.style.display = "none";
     frame.style.display = "block";
   }, 2500);
+  audio.play();
 }
 
 function closePopUp() {
   for(let i = 0; i < classNames.length; i++){
     document.getElementById(classNames[i]).classList.remove("text-bg-secondary");
   }
+  audio.pause();
+  audio.currentTime = 0;
   document.getElementById('navbar').setAttribute("style", "background-color:rgb(248, 249, 250)!important;");
   document.getElementById("pop-up").style.display = "none";
   document.getElementById("exit-button").style.display = "none";
   const frame = document.getElementById("frame");
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  const loadingPage = document.getElementById("loading-page");
+  loadingPage.style.display = "block";
+  document.body.style.backgroundColor = "yellow";
+  document.getElementById("main-page").style.display = "none";
+  window.setTimeout(function() {
+    loadingPage.style.display = "none";   
+    document.body.style.backgroundColor = "white";
+    document.getElementById("main-page").style.display = "block";
+  }, 9500);
+});

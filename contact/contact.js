@@ -23,7 +23,6 @@ function openPopUp() {
   document.getElementById("pop-up").style.display = "block";
   document.getElementById("exit-button").style.display = "block";
   document.getElementById('navbar').removeAttribute("style");
-
 }
 
 function closePopUp() {
