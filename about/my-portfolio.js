@@ -54,5 +54,11 @@ window.addEventListener("DOMContentLoaded", () => {
     loadingPage.style.display = "none";   
     document.body.style.backgroundColor = "white";
     document.getElementById("main-page").style.display = "block";
+    new TypeIt("#navbar-brand", {
+      speed: 50,
+      waitUntilVisible: true
+    })
+    .type("Hiroto Takao")
+    .go();
   }, 9500);
 });

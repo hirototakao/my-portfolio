@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
   
   githubIcon.setAttribute('height', '27');
   githubIcon.setAttribute('width', '30');
+  new TypeIt("#navbar-brand", {
+    speed: 50,
+    waitUntilVisible: true
+  })
+  .type("Hiroto Takao")
+  .go();
 });
 
 function openPopUp() {
@@ -29,5 +35,4 @@ function closePopUp() {
   document.getElementById("pop-up").style.display = "none";
   document.getElementById("exit-button").style.display = "none";
   document.getElementById('navbar').setAttribute("style", "background-color:rgb(248, 249, 250)!important;");
-
 }
