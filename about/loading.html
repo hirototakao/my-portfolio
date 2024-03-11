@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  #loading {
+    margin:0 auto;
+    text-align:center;
+    margin-top:30px;
+    color:black;
+  }
+  </style>
+</head>
+<body>
+  <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const loading = document.getElementById("loading");
+   loading.animate(
+ {
+   opacity: [
+     "1", "0.1", "0.9"
+   ],
+ },
+ {
+   duration: 1250,
+   iterations: Infinity,
+ },
+);
+  });
+</script>
+  <p id="loading">loading...</p>
+</body>
+</html>
