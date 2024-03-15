@@ -21,7 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
     speed: 50,
     waitUntilVisible: true
   })
-  .type("Hiroto Takao")
+  .type("Hiro Takao", {delay: 300 })
+  .move(-6)
+  .type("ta", {delay: 300})
+  .delete(1, {delay: 1000})
+  .type("o")
   .go();
 });
 

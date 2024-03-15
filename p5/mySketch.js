@@ -8,7 +8,7 @@ let bubbles =[];
 function setup(){
  createCanvas(945, 528);
 	  for (let i = 0; i < 1; i++){
-         bubbles[i] = new Bubble(random(width),random(400,800));
+         bubbles[i] = new Bubble(random(width),random(400 ,800));
       }
 }
 
@@ -21,7 +21,6 @@ function draw() {
         bubbles[i].show();
         bubbles[i].move();
       }
-			noFill();
 			strokeWeight(2.5);
 			stroke('lightblue');
 			x += (mouseX - x) * 0.2;
@@ -34,9 +33,9 @@ function mousePressed(){
 }
 
 class Bubble {
-	constructor(tempx,tempy){
-  	this.x = tempx;
-    this.y = tempy;
+	constructor(tempX,tempY){
+  	this.x = tempX;
+    this.y = tempY;
     this.size = random(20,50);
     this.r = random(0, 173);
     this.g = random(0, 216);
@@ -47,8 +46,8 @@ class Bubble {
     this.x += random(-4,4);
   	this.y += random(-5,-3);
     if (this.y < 0){
-      	
         this.y = random(height,height+100);
+        console.log(this.y);
         }
     if (this.x>width){
         this.x = 0;
