@@ -64,5 +64,29 @@ window.addEventListener("DOMContentLoaded", () => {
     .delete(1, {delay: 1000})
     .type("o")
     .go();
+
+    new TypeIt("#text1", {
+      speed: 50,
+      waitUntilVisible: true
+    })
+    .type("I borrowed bubble example in p5js's official website to do this. I produce the different colored bubbles in limited range of each value in rgb randomly. Especially, red in rgb is from 0 to 1. Gree")
+    .move(-6)
+    .type("73")
+    .move(6)
+    .type("n in rgb is from 0 to 1. Blue")
+    .move(-7)
+    .type("2")
+    .move(1)
+    .type("6")
+    .move(6)
+    .type(" in rgb is from 130 to 256.")
+    .go();
+
+    new TypeIt("#text2", {
+      speed: 50,
+      waitUntilVisible: true
+    })
+    .type("This bot is chat-based English dictionary, which can search, create, update meaning of specific word.")
+    .go();
   }, 9500);
 });
