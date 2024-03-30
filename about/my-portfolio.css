@@ -50,6 +50,38 @@ th, td {
   width:67.9%;
 }
 
+#profes {
+  width:50%;
+}
+
+#mostUsed {
+  width:50%; 
+  padding-left:5%;
+}
+
+@media screen and (max-width:1440px) {
+  #mostUsed {
+    width:100%;
+    padding-left:0%;
+  }
+  #progressBar {
+   flex-direction:column;
+  }
+  #profes {
+    width:100%;
+  }
+}
+@media screen and (max-width:1024px) {
+  .pop-up {
+    display:none;
+    left:100px;
+    width:75%;
+  }
+  #start-button {
+    display:none;
+  }
+}
+
 .exit-button {
   position:fixed;
   z-index:9;
