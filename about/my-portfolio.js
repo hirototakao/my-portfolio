@@ -46,10 +46,6 @@ function closePopUp() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const loadingPage = document.getElementById("loading-page");
-  loadingPage.style.display = "block";
-  document.body.style.backgroundColor = "yellow";
-  document.getElementById("main-page").style.display = "none";
   window.setTimeout(function() {
     loadingPage.style.display = "none";   
     document.body.style.backgroundColor = "white";
