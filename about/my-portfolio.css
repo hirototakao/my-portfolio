@@ -143,7 +143,7 @@ display:none;
 }
 
 .timeframe-line {
-  height:400px;
+  height:100%;
   width:100%;
   background-color:red;
   border-radius:30px;
@@ -158,26 +158,19 @@ display:none;
   background-color:#ffff;
   border-radius:30px;
 }
-
-.left-side-description {
-  height:400px;
+.description-div {
   width:47.7%;
+  height:400px;
 }
 
-.right-side-description {
-  height:400px;
-  width:47.7%;
-}
 .flex {
   margin:0 auto;
   width:100%;
   display:flex;
   margin-bottom:30px;
+  height:500px;
 }
 
 .line {
-  margin-top:30px;
-  border:1px solid red;
-  width:440px;
-  float:right;
+  border:2px solid red;
 }
