@@ -108,6 +108,7 @@ display:none;
 }
 
 .source-code-button {
+  position:absolute;
   bottom:15px;
 } 
 
