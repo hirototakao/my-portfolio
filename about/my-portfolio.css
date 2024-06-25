@@ -59,28 +59,6 @@ th, td {
   padding-left:5%;
 }
 
-@media screen and (max-width:1440px) {
-  #mostUsed {
-    width:100%;
-    padding-left:0%;
-  }
-  #progressBar {
-   flex-direction:column;
-  }
-  #profes {
-    width:100%;
-  }
-}
-@media screen and (max-width:1024px) {
-  .pop-up {
-    display:none;
-    left:100px;
-    width:75%;
-  }
-  #start-button {
-    display:none;
-  }
-}
 .exit-button {
   position:fixed;
   z-index:9;
@@ -130,9 +108,12 @@ display:none;
 }
 
 .source-code-button {
-  position:absolute;
   bottom:15px;
 } 
+
+.view-code {
+  position:absolute;
+}
 
 .timeframe-div {
   position:relative;
@@ -176,4 +157,31 @@ display:none;
 
 #text-content {
   margin-top:10px;
+}
+
+@media screen and (max-width:1440px) {
+  #mostUsed {
+    width:100%;
+    padding-left:0%;
+  }
+  #progressBar {
+   flex-direction:column;
+  }
+  #profes {
+    width:100%;
+  }
+}
+@media screen and (max-width:1024px) {
+  .pop-up {
+    display:none;
+    left:100px;
+    width:75%;
+  }
+  #start-button {
+    display:none;
+  }
+}
+
+#start-button {
+  margin-top:22px;
 }

@@ -105,7 +105,7 @@ window.addEventListener("DOMContentLoaded", () => {
       </div>
       </div>`;
    }
-  window.setTimeout(function() {
+  setTimeout(function() {
     loadingPage.style.display = "none";   
     document.body.style.backgroundColor = "white";
     document.getElementById("main-page").style.display = "block";
@@ -142,6 +142,21 @@ window.addEventListener("DOMContentLoaded", () => {
       waitUntilVisible: true
     })
     .type("This bot is chat-based English dictionary, which can search, create, update meaning of specific word.")
+    .go();
+
+    new TypeIt("#text3", {
+      speed: 50,
+      waitUntilVisible: true
+    })
+    .type("This bot search video with ")
+    .move(-6)
+    .type("s")
+    .move(6)
+    .type("search query on Edge Video.")
+    .move(-7)
+    .delete(4)
+    .type("Bing")
+    .move(7)
     .go();
   }, 9500);
 });
