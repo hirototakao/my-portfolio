@@ -34,8 +34,8 @@ function openPopUp() {
 }
 
 function closePopUp() {
-  for(let i = 0; i < classNames.length; i++){
-    document.getElementById(classNames[i]).classList.remove("text-bg-secondary");
+  for(let i = 0; i < IDNames.length; i++){
+    document.getElementById(IDNames[i]).classList.remove("text-bg-secondary");
   }
   audio.pause();
   audio.currentTime = 0;
