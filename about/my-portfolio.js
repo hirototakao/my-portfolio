@@ -1,11 +1,11 @@
 'use strict';
-const classNames = ["card1", "card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9", "card10", "card11", "card12", "card13", "card14", "card15","body"];
+const IDNames = ["card1", "card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9", "card10", "card11", "card12", "card13", "card14", "card15", "card16" ,"body"];
 const audio = new Audio("../underwater-whale-and-diving-sound-ambient-116185.mp3");
 
 function openPopUp() {
   document.getElementById('navbar').removeAttribute("style");
-  for(let i = 0; i < classNames.length; i++){
-    document.getElementById(classNames[i]).classList.add("text-bg-secondary");
+  for(let i = 0; i < IDNames.length; i++){
+    document.getElementById(IDNames[i]).classList.add("text-bg-secondary");
   }
   document.getElementById("exit-button").style.display = "block";
   document.getElementById("pop-up").style.display = "block";
