@@ -13,7 +13,7 @@ function setup(){
 }
 
 function preload() {
-   bg = loadImage('https://i.ibb.co/5hTpJK8/183-1838507-big.jpg');
+   bg = loadImage("../image/background.jpg");
 } 
 function draw() {
       background(bg);
