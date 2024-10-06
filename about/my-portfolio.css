@@ -18,6 +18,11 @@
 .card-margin {
   margin-bottom:30px;
 }
+.card-balancer .card {
+  width: 18rem; 
+  margin-right:13px;
+  position:relative;
+}
 table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -153,11 +158,14 @@ display:none;
 
 .line {
   border:2px solid red;
-  
 }
 
 #text-content {
   margin-top:10px;
+}
+
+.card-balancer {
+  display:flex;  
 }
 
 @media screen and (max-width:1440px) {
@@ -172,13 +180,27 @@ display:none;
     width:100%;
   }
 }
-@media screen and (max-width:1024px) {
+
+@media screen and (max-width:1024px){
   .pop-up {
     display:none;
     left:100px;
     width:75%;
   }
   #start-button {
+    display:none;
+  }
+
+  .card-balancer {
+    flex-wrap:wrap;
+  }
+
+  .card-balancer .card {
+    width:100%;
+    box-sizing: border-box;
+  }
+
+  .source-code-button {
     display:none;
   }
 }
