@@ -208,3 +208,8 @@ display:none;
 #start-button {
   margin-top:22px;
 }
+
+.attribution {
+  font-size:10px;
+  margin:0 auto;
+}
