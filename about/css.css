@@ -1,0 +1,210 @@
+:root {
+  --theme-color: #00a1a1;
+}
+.navbar {
+  margin-bottom:30px;
+  opacity:1;
+}
+.snappy-on-tag {
+ width:300px;
+ height:200px; 
+}
+.link-adjustment {
+  color:black;
+}
+.header-font {
+  font-weight:bold;
+}
+.card-margin {
+  margin-bottom:30px;
+}
+.card-balancer .card {
+  width: 18rem; 
+  margin-right:13px;
+  position:relative;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: solid 1px #f0f0f0;
+  min-width: 70%;
+}
+tr {
+  background-color: #fff;
+}
+tr:nth-child(2n) {
+  background-color: #f9f9f9;
+}
+th {
+  background: var(--theme-color);
+  color: #fff;
+}
+th, td {
+  border: solid 1px #f0f0f0;
+  padding: 0.5rem;
+}
+
+.pop-up {
+  position:fixed;
+  display:none;
+  z-index:9;
+  background-color:white;
+  top:100px;
+  left:260px;
+  height:70%;
+  width:67.9%;
+}
+
+#profes {
+  width:50%;
+}
+
+#mostUsed {
+  width:50%; 
+  padding-left:5%;
+}
+
+.exit-button {
+  position:fixed;
+  z-index:9;
+  top:50px;
+  left:210px;
+  height:60px;
+  width:60px;
+  cursor:pointer;
+  display:none;
+}
+
+.loader {
+  display:none;
+  border: 15px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 90px;
+  height: 90px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin:50% 0 0 45.5%;
+  margin-top:225px;
+}
+
+#frame {
+display:none; 
+}
+
+#loading {
+  display:none;
+  margin:0 auto;
+  text-align:center;
+  margin-top:30px;
+  color:black;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ldBar {
+  display:none;
+  margin:0 auto;
+  margin-top:300px;
+  font-weight:900;
+  text-align:center;
+}
+
+.source-code-button {
+  position:absolute;
+  bottom:15px;
+} 
+
+.view-code {
+  position:absolute;
+}
+
+.timeframe-div {
+  position:relative;
+  width: 4.6%;
+  text-align:center;
+  margin:0 auto;
+}
+
+.timeframe-line {
+  height:700px;
+  width:100%;
+  background-color:red;
+  border-radius:30px;
+}
+
+.event-point {
+  position: absolute;
+  top:0;
+  width:100%;
+  border:1px solid red;
+  background-color:#ffff;
+  border-radius:30px;
+}
+.description-div {
+  width:47.7%;
+  height:400px;
+}
+
+.flex {
+  margin:0 auto;
+  width:100%;
+  display:flex;
+  margin-bottom:30px;
+  height:500px;
+}
+
+.line {
+  border:2px solid red;
+}
+
+#text-content {
+  margin-top:10px;
+}
+
+.card-balancer {
+  display:flex;  
+}
+
+@media screen and (max-width:1440px) {
+  #mostUsed {
+    width:100%;
+    padding-left:0%;
+  }
+  #progressBar {
+   flex-direction:column;
+  }
+  #profes {
+    width:100%;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .pop-up {
+    display:none;
+    left:100px;
+    width:75%;
+  }
+  #start-button {
+    display:none;
+  }
+
+  .card-balancer {
+    flex-wrap:wrap;
+  }
+
+  .card-balancer .card {
+    width:100%;
+    box-sizing: border-box;
+  }
+
+  .source-code-button {
+    display:none;
+  }
+}
+
+#start-button {
+  margin-top:22px;
+}

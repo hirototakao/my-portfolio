@@ -47,7 +47,6 @@ class Bubble {
   	this.y += random(-5,-3);
     if (this.y < 0){
         this.y = random(height,height+100);
-        console.log(this.y);
         }
     if (this.x>width){
         this.x = 0;

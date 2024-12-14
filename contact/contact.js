@@ -1,14 +1,3 @@
-function clipboard(id) {
-  　const email = document.getElementById(id).innerText;
-    navigator.clipboard.writeText(email);
-    swal("Copied!", "You copied it to clipboard", "success")
-}
-function clipboardForTextBox(id) {
-    const InputValue = document.getElementById(id).value;
-    navigator.clipboard.writeText(InputValue);
-    swal("Copied!", "You copied it to clipboard", "success")
-}
-
 document.addEventListener('DOMContentLoaded', function() {
   const twitterIcon = document.getElementById('twitterIcon');
   const githubIcon = document.getElementById('githubIcon');
@@ -17,16 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
   githubIcon.setAttribute('height', '27');
   githubIcon.setAttribute('width', '30');
-  new TypeIt("#navbar-brand", {
-    speed: 50,
-    waitUntilVisible: true
-  })
-  .type("Hiro Takao", {delay: 300 })
-  .move(-6)
-  .type("ta", {delay: 300})
-  .delete(1, {delay: 1000})
-  .type("o")
-  .go();
 });
 
 function openPopUp() {
@@ -39,4 +18,15 @@ function closePopUp() {
   document.getElementById("pop-up").style.display = "none";
   document.getElementById("exit-button").style.display = "none";
   document.getElementById('navbar').setAttribute("style", "background-color:rgb(248, 249, 250)!important;");
+}
+
+function clipboard(id) {
+  　const email = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(email);
+    swal("Copied!", "You copied it to clipboard", "success")
+}
+function clipboardForTextBox(id) {
+    const InputValue = document.getElementById(id).value;
+    navigator.clipboard.writeText(InputValue);
+    swal("Copied!", "You copied it to clipboard", "success")
 }
